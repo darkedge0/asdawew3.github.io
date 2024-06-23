@@ -153,20 +153,6 @@ a {
     }
 
 
-.time-stamp {
-  background: hsl(210, 10%, 30%, 0.65); /* 深蓝色背景 */
-  border: 1px solid hsl(210, 10%, 30%, 0.65); /* 使用稍微深一点的浅蓝色边框增强对比 */
-  border-radius: 20px; /* 圆角 */
-  margin: 10px auto; /* 上下外边距，水平居中 */
-  padding: 5px 10px; /* 内边距 */
-  font-size: 14px; /* 字体大小 */
-  color: white; /* 字体颜色为白色 */
-  text-align: center; /* 文本居中 */
-  width: 75px; /* 宽度 */
-  display: block; /* 块级显示 */
-  position: relative; /* 相对定位 */
-  transform: translate(-50px, 0px); /* X轴偏移20px, Y轴偏移10px */
-}
  
 /* 聊天气泡样式 */
 .chat-bubble {
@@ -521,70 +507,103 @@ body {
 }
 .lite-chatbox .cmsg {
   position: relative;
-  margin: 4px 7px;
   min-height: 50px;
   border: 0;
 }
+
+
+
+
 .lite-chatbox .cright {
-  text-align: right;
-  margin-left: 64px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 .lite-chatbox .cright img.headIcon {
-  right: 0;
+  display: block; /* Ensure the image is displayed as a block element */
+  margin: 0 auto; /* Center the image horizontally */
 }
-.lite-chatbox .cright .name {
-  margin: 0 48px 2px 0;
-}
+
+.lite-chatbox .cright .name,
 .lite-chatbox .cright .content {
-  margin: 0 48px 0 0;
-  border-radius: 20px 0 20px 20px;
-  color: #fff;
-  background: -o-linear-gradient(
-    70deg,
-    rgba(63, 143, 225, 0.8) 0,
-    #44d7c9 100%
-  );
-  background: linear-gradient(20deg, rgba(63, 143, 225, 0.8) 0, #44d7c9 100%);
-  -webkit-box-shadow: 5px 5px 15px 0 rgba(102, 102, 102, 0.15);
-  box-shadow: 5px 5px 15px 0 rgba(102, 102, 102, 0.15);
+  margin-left: auto;
+  margin-right: auto;
 }
+
+.lite-chatbox .cright .content {
+  background: none; /* Remove background color */
+  color: #fff; /* Text color */
+  border-radius: 20px; /* Rounded corners if needed */
+  -webkit-box-shadow: none; /* Remove box shadow */
+  box-shadow: none;
+  position: relative; /* Ensure relative positioning for pseudo-elements */
+}
+
 [litewebchat-theme="dark"] .lite-chatbox .cright .content {
-  background: -o-linear-gradient(70deg, rgba(25, 91, 159, 0.8) 0, #219a92 100%);
-  background: linear-gradient(20deg, rgba(25, 91, 159, 0.8) 0, #219a92 100%);
+  /* Adjust styles for dark theme if needed */
 }
+
 .lite-chatbox .cright .content::after {
-  left: -12px;
-  top: 8px;
+  content: ""; /* Ensure pseudo-element has content to render */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 8px; /* Adjust top position as needed */
 }
+
+
+
+
+
+
+
 .lite-chatbox .cleft {
   text-align: left;
-  margin-right: 64px;
+    margin: 20px 0px;
 }
+
 .lite-chatbox .cleft img.headIcon {
   left: 0;
+    margin: 0px 20px;
 }
+
 .lite-chatbox .cleft .name {
-  margin: 0 0 2px 48px;
+  margin: 0 0 2px 68px;
 }
+
 .lite-chatbox .cleft .content {
-  margin: 0 0 0 48px;
+  margin: 0 0 0 68px;
   border-radius: 0 20px 20px 20px;
-  background: #fff;
-  color: #373737;
+  
+  
+background: -o-linear-gradient(70deg, rgba(23, 33, 43, 0.45) 0, #17212B 100%);
+background: linear-gradient(20deg, rgba(23, 33, 43, 0.45) 0, #17212B 100%);
+  
+  
+  color: #fff; /* Change text color */
   border: 1px solid rgba(0, 0, 0, 0.05);
   -webkit-box-shadow: 5px 5px 15px 0 rgba(102, 102, 102, 0.1);
   box-shadow: 5px 5px 15px 0 rgba(102, 102, 102, 0.1);
 }
+
 [litewebchat-theme="dark"] .lite-chatbox .cleft .content {
-  background: #22242a;
+  background: -o-linear-gradient(70deg, rgba(25, 91, 159, 0.8) 0, #219a92 100%);
+  background: linear-gradient(20deg, rgba(25, 91, 159, 0.8) 0, #219a92 100%);
+  color: #d4d4d4; /* Change text color for dark theme */
 }
-[litewebchat-theme="dark"] .lite-chatbox .cleft .content {
-  color: #d4d4d4;
-}
+
 .lite-chatbox .cleft .content::after {
-  left: -12px;
-  top: 8px;
+
+
 }
+
+
+
+
+
+
+
 .lite-chatbox img.headIcon {
   width: 34px;
   height: 34px;
