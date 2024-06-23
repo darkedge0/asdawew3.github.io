@@ -1,15 +1,213 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>LiteChat_Frame（轻聊天气泡框架）</title><link rel="stylesheet" type="text/css" href="dist/css/litewebchat.min.css"></head><style>html,
-body {
-height: 100%;
-margin: 0; 
-padding: 0;
-}</style><body><!-- 主容器 --><div class="lite-chatbox"><!-- cleft 左 --><div class="cleft cmsg"><img class="headIcon radius" ondragstart="return false;" oncontextmenu="return false;" src="dist/images/A.jpg"><span class="name"><span>chenjunyu19</span></span><span class="content">这是什么什么鬼？</span></div><!-- cright 右 --><div class="cright cmsg"><img class="headIcon radius" ondragstart="return false;" oncontextmenu="return false;" src="dist/images/B.jpg"><span class="name"><span>SuperPaxxs</span></span><span class="content">LiteChat_Frame（轻聊天气泡框架），一个贼简洁 <del>(简单)</del>、美观、易用的 HTML 聊天界面框架</span></div><div class="cright cmsg"><img class="headIcon radius" ondragstart="return false;" oncontextmenu="return false;" src="dist/images/B.jpg"><span class="name"><span>SuperPaxxs</span></span><span class="content"> 它简洁而不简单，能使你开发聊天界面更快速 </span></div><div class="cright cmsg"><img class="headIcon radius" src="dist/images/B.jpg" ondragstart="return false;" oncontextmenu="return false;"><span class="name"><span class="htitle owner" style="margin: 0 4px 0 0;">NEW</span><span>SuperPaxxs</span></span><span class="content">LiteChat_Frame 拥有暗色模式, 快来试试吧:<br><br><style>.theme-switch{background: none;border: solid 1px;border-radius: 2em;font: inherit;cursor: pointer;color: #fff;}</style><button class="theme-switch"> 切换配色 </button></span></div><div class="cleft cmsg"><img class="headIcon radius" ondragstart="return false;" oncontextmenu="return false;" src="dist/images/A.jpg"><span class="name"><span>chenjunyu19</span></span><span class="content"> 直接说，气泡是谁的？</span></div><div class="cright cmsg"><img class="headIcon radius" ondragstart="return false;" oncontextmenu="return false;" src="dist/images/B.jpg"><span class="name"><span>SuperPaxxs</span></span><span class="content"> 好吧，气泡 css 来自 Haswikr 的 Blog 的机器人气泡 😝</span></div><div class="cleft cmsg"><img class="headIcon radius" ondragstart="return false;" oncontextmenu="return false;" src="dist/images/H.jpg"><span class="name"><span class="htitle admin">admin</span><span>Haswikr</span></span><span class="content">当初调色煞费苦心 </span></div><div class="cleft cmsg"><img class="headIcon radius" ondragstart="return false;" oncontextmenu="return false;" src="dist/images/O.jpg"><span class="name"><span class="htitle owner">owner</span><span>Sonui</span></span><span class="content"> 这设计真棒 </span></div><div class="cleft cmsg"><img class="headIcon radius" ondragstart="return false;" oncontextmenu="return false;" src="dist/images/A.jpg"><span class="name"><span class="htitle">menber123456789789</span><span>chenjunyu19</span></span><span class="content"> 那咋用啊？</span></div><div class="cright cmsg"><img class="headIcon radius" ondragstart="return false;" oncontextmenu="return false;" src="dist/images/B.jpg"><span class="name"><span>SuperPaxxs</span></span><span class="content"><del>诶哟少年你找对人了 </del><br/><br/> 如果只是使用，那非常简单。<h2>使用指北 </h2><br/>1. 引用 css： litechat.css<br/><br/>&lt;link type=&quot;text/css&quot; href=&quot;//lab.morfans.cn/LiteWebChat_Frame/litewebchat.css&quot; rel=&quot;stylesheet&quot; /&gt;<br/> 或<br/>&lt;link type=&quot;text/css&quot; href=&quot;//lab.morfans.cn/LiteWebChat_Frame/litewebchat.min.css&quot; rel=&quot;stylesheet&quot; /&gt;<br/><br/>2. 创建一个 DIV ，用来容纳聊天对话，目的是不让 css 干扰页面其他内容：<br/><br/>&lt;div class=&quot;lite-chatbox&quot;&gt;<br/>...<br/>&lt;/div&gt;<br/><br/>话说你就不会看下源码吗...<b>楼下是特性演示 </b></span></div><div class="tips"><span>Chenjunyu19 退出了聊天室并撩了你一把</span></div><div class="cleft cmsg"><img class="headIcon radius" ondragstart="return false;" oncontextmenu="return false;" src="dist/images/A.jpg"><span class="name"><span> 空消息测试 1</span></span><span class="content"></span></div><div class="cright cmsg"><img class="headIcon radius" ondragstart="return false;" oncontextmenu="return false;" src="dist/images/B.jpg"><span class="name"><span>空消息测试 2</span></span><span class="content">&nbsp;</span></div><div class="cleft cmsg"><img class="headIcon radius" ondragstart="return false;" oncontextmenu="return false;" src="dist/images/A.jpg"><span class="name"><span>chenjunyu19</span></span><span class="content">注意，上面两条空消息的消息内容代码不一样 </span></div><div class="cright cmsg"><img class="headIcon" ondragstart="return false;" oncontextmenu="return false;" src="dist/images/B.jpg"><span class="name"><span>SuperPaxxs</span></span><span class="content"> 头像换成方形请去掉 radius</span></div><div class="cleft cmsg"><img class="headIcon" ondragstart="return false;" oncontextmenu="return false;" src="dist/images/A.jpg"><span class="name"><span>chenjunyu19</span></span><span class="content">我是左边的方形头像 </span></div><div class="cright cmsg"><img class="headIcon radius" ondragstart="return false;" oncontextmenu="return false;" src="dist/images/B.jpg"><span class="name"><span> 图片消息 </span></span><span class="content"><img src="dist/images/img2.png"></span></div><div class="cleft cmsg"><img class="headIcon radius" ondragstart="return false;" oncontextmenu="return false;" src="dist/images/A.jpg"><span class="name"><span> 图片消息 2</span></span><span class="content"><img src="dist/images/img.png"><br>图片带文字是可以的 <del>（废话）</del></span></div><div class="cright cmsg"><img class="headIcon radius" ondragstart="return false;" oncontextmenu="return false;" src="dist/images/B.jpg"><span class="name"><span> 右边长消息 </span></span><span class="content"> 我的消息真的超级长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长欸 </span></div><div class="cleft cmsg"><img class="headIcon radius" ondragstart="return false;" oncontextmenu="return false;" src="dist/images/A.jpg"><span class="name"><span> 左边长消息 </span></span><span class="content"> 这么巧鸭，我的也超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超级长的欸 </span></div><div class="tips"><span class="tips-danger"> 系统消息：左 / 右边长消息被管理员批判一番……</span></div><div class="tips"><span>系统消息：normal</span></div><div class="tips"><span class="tips-primary">系统消息：primary</span></div><div class="tips"><span class="tips-success">系统消息：success</span></div><div class="tips"><span class="tips-info">系统消息：info</span></div><div class="tips"><span class="tips-warning">系统消息：warning</span></div><div class="tips"><span class="tips-danger">系统消息：danger</span></div><div class="cright cmsg"><img class="headIcon radius" ondragstart="return false;" oncontextmenu="return false;" src="dist/images/B.jpg"><span class="name"><span>带有超链接的消息测试 </span></span><span class="content"> 当然是可以有超链接的。例子在这里：<br><a href="http://morfans.cn" target="_blank">你敢点我吗 </a>← 戳这里</span></div><div class="cleft cmsg"><img class="headIcon radius" ondragstart="return false;" oncontextmenu="return false;" src="dist/images/A.jpg"><span class="name"><span> 全符号测试 </span></span><span class="content">。，；？：！‘’“”@ˆ.,;?:!&#x27;&quot;〝〞﹫ˇ</span></div><div class="cleft cmsg"><img class="headIcon radius" ondragstart="return false;" oncontextmenu="return false;" src="dist/images/A.jpg"><span class="name"><span> 全 emoji 测试 </span></span><span class="content">😀😝🐂🍺</span></div><div class="cright cmsg"><img class="headIcon radius" ondragstart="return false;" oncontextmenu="return false;" src="dist/images/B.jpg"><span class="name"><span>&nbsp;</span></span><span class="content"> 当无昵时候需要 &amp;nbsp; 填充 </span></div><div class="cright cmsg"><img class="headIcon radius" ondragstart="return false;" oncontextmenu="return false;" src="dist/images/B.jpg"><span class="name"><span>SuperPaxxs</span></span><span class="content"> 换行用 &lt;br&gt;，HTML 你懂的..</span></div><div class="cleft cmsg"><img class="headIcon radius" ondragstart="return false;" oncontextmenu="return false;" src="dist/images/A.jpg"><span class="name"><span>chenjunyu19</span></span><span class="content">以上就是全部的特性，以后有空再更</span></div></div><script>const btns = document.querySelectorAll('.theme-switch');
-const html = document.documentElement;
-const addEvent = btn => {btn.addEventListener('click', e => {let theme = html.getAttribute("litewebchat-theme");
-    if (theme === 'dark') {html.setAttribute("litewebchat-theme", 'light');
-    } else {html.setAttribute("litewebchat-theme", 'dark');
-    }
+<link rel="stylesheet" href="css/style.css">
+<script type="module" src="js/script.js"></script>
+
+
+
+
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>点击开始 | 你想要的 | 这里都有</title>
+</head>
+
+
+
+
+<video id="background-video" muted="muted" loop="loop"> 
+  <source src="https://mp4.ziyuan.wang/view.php/4d02ce60f8f24b56adc4941d1ad00321.mp4" type="video/mp4">
+</video> 
+<div class="card navigation">  
+  <button class="button-quote" id="quote-button"> </button> <!-- Updated with example text --> 
+  <button2><a href="#footer"></a></button2> <!-- Button with arrow symbol, now adjacent to quote -->   
+</div>  
+
+<article style="display: none;">
+  
+   <!-- 主容器 -->
+  <div class="lite-chatbox">
+    <!-- cleft 左 -->
+    <div class="cleft cmsg"><img class="headIcon radius" ondragstart="return false;" oncontextmenu="return false;" src="dist/images/A.jpg"><span class="name"><span>chenjunyu19</span></span><span class="content">这是什么什么鬼？</span></div><!-- cright 右 -->
+    <div class="cright cmsg"><img class="headIcon radius" ondragstart="return false;" oncontextmenu="return false;" src="dist/images/B.jpg"><span class="name"><span>SuperPaxxs</span></span><span class="content">LiteChat_Frame（轻聊天气泡框架），一个贼简洁 <del>(简单)</del>、美观、易用的 HTML 聊天界面框架</span></div>
+    <div class="cright cmsg"><img class="headIcon radius" ondragstart="return false;" oncontextmenu="return false;" src="dist/images/B.jpg"><span class="name"><span>SuperPaxxs</span></span><span class="content"> 它简洁而不简单，能使你开发聊天界面更快速 </span></div>
+    <div class="cright cmsg"><img class="headIcon radius" src="dist/images/B.jpg" ondragstart="return false;" oncontextmenu="return false;"><span class="name"><span class="htitle owner" style="margin: 0 4px 0 0;">NEW</span><span>SuperPaxxs</span></span><span class="content">LiteChat_Frame 拥有暗色模式, 快来试试吧:<br><br>
+        <style>
+          .theme-switch {
+            background: none;
+            border: solid 1px;
+            border-radius: 2em;
+            font: inherit;
+            cursor: pointer;
+            color: #fff;
+          }
+        </style><button class="theme-switch"> 切换配色 </button>
+      </span></div>
+    <div class="cleft cmsg"><img class="headIcon radius" ondragstart="return false;" oncontextmenu="return false;" src="dist/images/A.jpg"><span class="name"><span>chenjunyu19</span></span><span class="content"> 直接说，气泡是谁的？</span></div>
+    <div class="cright cmsg"><img class="headIcon radius" ondragstart="return false;" oncontextmenu="return false;" src="dist/images/B.jpg"><span class="name"><span>SuperPaxxs</span></span><span class="content"> 好吧，气泡 css 来自 Haswikr 的 Blog 的机器人气泡 😝</span></div>
+    <div class="cleft cmsg"><img class="headIcon radius" ondragstart="return false;" oncontextmenu="return false;" src="dist/images/H.jpg"><span class="name"><span class="htitle admin">admin</span><span>Haswikr</span></span><span class="content">当初调色煞费苦心 </span></div>
+    <div class="cleft cmsg"><img class="headIcon radius" ondragstart="return false;" oncontextmenu="return false;" src="dist/images/O.jpg"><span class="name"><span class="htitle owner">owner</span><span>Sonui</span></span><span class="content"> 这设计真棒 </span></div>
+    <div class="cleft cmsg"><img class="headIcon radius" ondragstart="return false;" oncontextmenu="return false;" src="dist/images/A.jpg"><span class="name"><span class="htitle">menber123456789789</span><span>chenjunyu19</span></span><span class="content"> 那咋用啊？</span></div>
+    <div class="cright cmsg"><img class="headIcon radius" ondragstart="return false;" oncontextmenu="return false;" src="dist/images/B.jpg"><span class="name"><span>SuperPaxxs</span></span><span class="content"><del>诶哟少年你找对人了 </del><br /><br /> 如果只是使用，那非常简单。<h2>使用指北 </h2><br />1. 引用 css： litechat.css<br /><br />&lt;link type=&quot;text/css&quot; href=&quot;//lab.morfans.cn/LiteWebChat_Frame/litewebchat.css&quot; rel=&quot;stylesheet&quot; /&gt;<br /> 或<br />&lt;link type=&quot;text/css&quot; href=&quot;//lab.morfans.cn/LiteWebChat_Frame/litewebchat.min.css&quot; rel=&quot;stylesheet&quot; /&gt;<br /><br />2. 创建一个 DIV ，用来容纳聊天对话，目的是不让 css 干扰页面其他内容：<br /><br />&lt;div class=&quot;lite-chatbox&quot;&gt;<br />...<br />&lt;/div&gt;<br /><br />话说你就不会看下源码吗...<b>楼下是特性演示 </b></span></div>
+    <div class="tips"><span>Chenjunyu19 退出了聊天室并撩了你一把</span></div>
+    <div class="cleft cmsg"><img class="headIcon radius" ondragstart="return false;" oncontextmenu="return false;" src="dist/images/A.jpg"><span class="name"><span> 空消息测试 1</span></span><span class="content"></span></div>
+    <div class="cright cmsg"><img class="headIcon radius" ondragstart="return false;" oncontextmenu="return false;" src="dist/images/B.jpg"><span class="name"><span>空消息测试 2</span></span><span class="content">&nbsp;</span></div>
+    <div class="cleft cmsg"><img class="headIcon radius" ondragstart="return false;" oncontextmenu="return false;" src="dist/images/A.jpg"><span class="name"><span>chenjunyu19</span></span><span class="content">注意，上面两条空消息的消息内容代码不一样 </span></div>
+    <div class="cright cmsg"><img class="headIcon" ondragstart="return false;" oncontextmenu="return false;" src="dist/images/B.jpg"><span class="name"><span>SuperPaxxs</span></span><span class="content"> 头像换成方形请去掉 radius</span></div>
+    <div class="cleft cmsg"><img class="headIcon" ondragstart="return false;" oncontextmenu="return false;" src="dist/images/A.jpg"><span class="name"><span>chenjunyu19</span></span><span class="content">我是左边的方形头像 </span></div>
+    <div class="cright cmsg"><img class="headIcon radius" ondragstart="return false;" oncontextmenu="return false;" src="dist/images/B.jpg"><span class="name"><span> 图片消息 </span></span><span class="content"><img src="dist/images/img2.png"></span></div>
+    <div class="cleft cmsg"><img class="headIcon radius" ondragstart="return false;" oncontextmenu="return false;" src="dist/images/A.jpg"><span class="name"><span> 图片消息 2</span></span><span class="content"><img src="dist/images/img.png"><br>图片带文字是可以的 <del>（废话）</del></span></div>
+    <div class="cright cmsg"><img class="headIcon radius" ondragstart="return false;" oncontextmenu="return false;" src="dist/images/B.jpg"><span class="name"><span> 右边长消息 </span></span><span class="content"> 我的消息真的超级长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长欸 </span></div>
+    <div class="cleft cmsg"><img class="headIcon radius" ondragstart="return false;" oncontextmenu="return false;" src="dist/images/A.jpg"><span class="name"><span> 左边长消息 </span></span><span class="content"> 这么巧鸭，我的也超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超超级长的欸 </span></div>
+    <div class="tips"><span class="tips-danger"> 系统消息：左 / 右边长消息被管理员批判一番……</span></div>
+    <div class="tips"><span>系统消息：normal</span></div>
+    <div class="tips"><span class="tips-primary">系统消息：primary</span></div>
+    <div class="tips"><span class="tips-success">系统消息：success</span></div>
+    <div class="tips"><span class="tips-info">系统消息：info</span></div>
+    <div class="tips"><span class="tips-warning">系统消息：warning</span></div>
+    <div class="tips"><span class="tips-danger">系统消息：danger</span></div>
+    <div class="cright cmsg"><img class="headIcon radius" ondragstart="return false;" oncontextmenu="return false;" src="dist/images/B.jpg"><span class="name"><span>带有超链接的消息测试 </span></span><span class="content"> 当然是可以有超链接的。例子在这里：<br><a href="http://morfans.cn" target="_blank">你敢点我吗 </a>← 戳这里</span></div>
+    <div class="cleft cmsg"><img class="headIcon radius" ondragstart="return false;" oncontextmenu="return false;" src="dist/images/A.jpg"><span class="name"><span> 全符号测试 </span></span><span class="content">。，；？：！‘’“”@ˆ.,;?:!&#x27;&quot;〝〞﹫ˇ</span></div>
+    <div class="cleft cmsg"><img class="headIcon radius" ondragstart="return false;" oncontextmenu="return false;" src="dist/images/A.jpg"><span class="name"><span> 全 emoji 测试 </span></span><span class="content">😀😝🐂🍺</span></div>
+    <div class="cright cmsg"><img class="headIcon radius" ondragstart="return false;" oncontextmenu="return false;" src="dist/images/B.jpg"><span class="name"><span>&nbsp;</span></span><span class="content"> 当无昵时候需要 &amp;nbsp; 填充 </span></div>
+    <div class="cright cmsg"><img class="headIcon radius" ondragstart="return false;" oncontextmenu="return false;" src="dist/images/B.jpg"><span class="name"><span>SuperPaxxs</span></span><span class="content"> 换行用 &lt;br&gt;，HTML 你懂的..</span></div>
+    <div class="cleft cmsg"><img class="headIcon radius" ondragstart="return false;" oncontextmenu="return false;" src="dist/images/A.jpg"><span class="name"><span>chenjunyu19</span></span><span class="content">以上就是全部的特性，以后有空再更</span></div>
+  </div>
+  <script>
+    const btns = document.querySelectorAll('.theme-switch');
+    const html = document.documentElement;
+    const addEvent = btn => {
+      btn.addEventListener('click', e => {
+        let theme = html.getAttribute("litewebchat-theme");
+        if (theme === 'dark') {
+          html.setAttribute("litewebchat-theme", 'light');
+        } else {
+          html.setAttribute("litewebchat-theme", 'dark');
+        }
+      });
+    };
+    btns.forEach(btn => {
+      addEvent(btn);
+    });
+
+
+
+
+document
+  .querySelector('a[href="#footer"]')
+  .addEventListener("click", function (e) {
+    e.preventDefault(); // 阻止默认锚点跳转行为
+    window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" }); // 滚动到页面底部
   });
-};
-btns.forEach(btn => {addEvent(btn);
-});</script></body></html>
+
+let videoInitiated = false;
+
+function enableVideoAutoplay() {
+  let video = document.getElementById("background-video");
+  let playButton = document.getElementById("play-button");
+  if (!videoInitiated) {
+    video
+      .play()
+      .then(() => {
+        video.style.opacity = "1"; // 视频成功播放后淡入
+        video.muted = false; // 取消静音
+        videoInitiated = true; // 设置为 true 以防止进一步的自动播放尝试
+        playButton.classList.add("fade-out"); // 触发播放按钮的淡出动画
+      })
+      .catch((err) => {
+        console.log("Video play failed: ", err);
+      });
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  const quoteButton = document.getElementById("quote-button");
+  const article = document.querySelector("article");
+  const headerBar = document.querySelector(".header-bar"); // 获取标题栏元素
+  const video = document.getElementById("background-video"); // 获取视频元素
+
+  // Initially hide the quote button, article, and header bar
+  quoteButton.style.display = "none";
+  article.style.display = "none";
+  article.style.filter = 'blur(5px)'; // Set initial article blur
+
+  // Function to show the quote button and later reveal the article and header bar
+  function showQuote() {
+    quoteButton.style.display = "block";
+    quoteButton.style.opacity = "0";
+    quoteButton.style.transition = "opacity 4s";
+    quoteButton.style.opacity = "0.8";
+
+    setTimeout(function () {
+      quoteButton.style.opacity = "0";
+      quoteButton.style.transition = "opacity 2s"; // Faster fade out
+      setTimeout(function () {
+        quoteButton.style.display = "none";
+        showArticleAndHeader(); // Show the article and header bar after the quote button fades out
+      }, 1500); // Wait for the faster fade out before hiding the button
+    }, 2200); // Wait for 3 seconds before starting to fade out
+  }
+
+  // Function to show the article and header bar with a fade-in effect and removing blur
+  function showArticleAndHeader() {
+    article.style.display = "block";
+    article.style.opacity = "0";
+    article.style.transition = "opacity 2s, filter 2s";
+    video.style.filter = 'blur(10px)'; // Video gradually becomes blurry
+    video.style.transition = 'filter 2s'; // Smooth transition for video blur
+    setTimeout(() => {
+      article.style.filter = 'blur(0)'; // Gradually remove blur from the article
+      article.style.opacity = "1"; // Gradually show article
+    }, 1000); // Start removing blur and showing article after 1 second
+  } 
+
+  // Detect any user interaction
+  function handleUserInteraction() {
+    setTimeout(showQuote, 2000); // Wait for 3 seconds before showing the quote
+    document.removeEventListener("click", handleUserInteraction);
+    document.removeEventListener("touchend", handleUserInteraction);
+  }
+
+  document.addEventListener("click", handleUserInteraction);
+  document.addEventListener("touchend", handleUserInteraction);
+});
+
+document.addEventListener("click", function () {
+  let video = document.getElementById("background-video");
+  if (video.paused) {
+    video.play();
+    video.style.opacity = "1";
+    video.muted = false;
+  }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const quotes = ["1", "2", "3"]; // Example quote
+
+  function displayRandomQuote() {
+    const randomIndex = Math.floor(Math.random() * quotes.length);
+    const quoteButton = document.getElementById("quote-button");
+    quoteButton.textContent = quotes[randomIndex];
+  }
+
+  displayRandomQuote(); // Call this function to display a random quote on load
+});
+
+
+
+
+
+  </script>
+  
+  
+  
+ 
+
+</article>
+
+
+
+
+ 
+</body>
