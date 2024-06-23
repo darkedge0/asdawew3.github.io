@@ -214,7 +214,7 @@ a {
   display: block;
   max-width: 100%;
   height: auto;
-  margin: 5px 0 0px 0;  /* 增加图片的下边距 */
+  margin: 0px 0 0px 0;  /* 增加图片的下边距 */
   border-radius: 15px; /* 圆角 */
 }
 
