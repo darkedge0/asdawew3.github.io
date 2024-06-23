@@ -534,7 +534,7 @@ body {
 .lite-chatbox .cright .content {
   background: none; /* Remove background color */
   color: #fff; /* Text color */
-  border-radius: 20px; /* Rounded corners if needed */
+  border-radius: 0px; /* Rounded corners if needed */
   -webkit-box-shadow: none; /* Remove box shadow */
   box-shadow: none;
   position: relative; /* Ensure relative positioning for pseudo-elements */
@@ -549,7 +549,7 @@ body {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 8px; /* Adjust top position as needed */
+  top: 0px; /* Adjust top position as needed */
 }
 
 
@@ -560,7 +560,7 @@ body {
 
 .lite-chatbox .cleft {
   text-align: left;
-    margin: 0px;
+    margin: 30px;
 }
 
 .lite-chatbox .cleft img.headIcon {
@@ -605,7 +605,7 @@ body {
 .lite-chatbox img.headIcon {
   width: 34px;
   height: 34px;
-  top: 9px;
+  top: 0px;
   position: absolute;
 }
 .lite-chatbox img.radius {
