@@ -574,7 +574,7 @@ body {
 
 .lite-chatbox .cleft .content {
   margin: 0 0 0 40px;
-  border-radius: 0 40px 40px 40px;
+  border-radius: 0 80px 80px 80px;
   background: linear-gradient(20deg, rgba(23, 33, 43, 0.45) 0, #17212B 100%);
   color: #fff; /* 文本颜色 */
   border: 1px solid rgba(0, 0, 0, 0.05);
