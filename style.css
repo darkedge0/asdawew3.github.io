@@ -215,7 +215,7 @@ a {
   max-width: 100%;
   height: auto;
   margin: 0px 0 0px 0;  /* 增加图片的下边距 */
-  border-radius: 15px; /* 圆角 */
+  border-radius: 50px; /* 圆角 */
 }
 
 
@@ -575,16 +575,14 @@ body {
 .lite-chatbox .cleft .content {
   margin: 0 0 0 68px;
   border-radius: 0 20px 20px 20px;
-  
-  
-background: -o-linear-gradient(70deg, rgba(23, 33, 43, 0.45) 0, #17212B 100%);
-background: linear-gradient(20deg, rgba(23, 33, 43, 0.45) 0, #17212B 100%);
-  
-  
-  color: #fff; /* Change text color */
+  background: linear-gradient(20deg, rgba(23, 33, 43, 0.45) 0, #17212B 100%);
+  color: #fff; /* 文本颜色 */
   border: 1px solid rgba(0, 0, 0, 0.05);
   -webkit-box-shadow: 5px 5px 15px 0 rgba(102, 102, 102, 0.1);
   box-shadow: 5px 5px 15px 0 rgba(102, 102, 102, 0.1);
+  font-family: 'Arial', sans-serif; /* 字体设置为 Arial */
+  font-weight: bold; /* 加粗文本 */
+  font-size: 22px; /* 字体大小设置 */
 }
 
 [litewebchat-theme="dark"] .lite-chatbox .cleft .content {
