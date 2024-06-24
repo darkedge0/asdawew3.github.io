@@ -171,7 +171,7 @@ a {
 /* 聊天气泡样式 */
 .chat-bubble {
   background: linear-gradient(20deg, rgba(23, 33, 43, 0.65) 0, #17212B 100%);
-  border-radius: 20px 20px 20px 0px; /* 圆角 */
+  border-radius: 0px 20px 20px 20px; /* 圆角 */
   margin: 10px 0; /* 上下外边距 */
   position: relative; /* 相对定位 */
   padding: 15px; /* 内边距 */
