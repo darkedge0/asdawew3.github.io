@@ -171,27 +171,27 @@ a {
 /* 聊天气泡样式 */
 .chat-bubble {
   background: linear-gradient(20deg, rgba(23, 33, 43, 0.65) 0, #17212B 100%);
-  border-radius: 20px 20px 20px 0px; /* 圆角 */
-  margin: 10px 0; /* 上下外边距 */
-  position: relative; /* 相对定位 */
-  padding: 15px; /* 内边距 */
-  margin-left: 50px; /* 左边距调整，留出头像空间 */
-  max-width: 80%; /* 最大宽度 */
+  border-radius: 20px 20px 20px 0px;
+  margin: 10px 0;
+  position: relative;
+  padding: 15px;
+  margin-left: 50px;
+  max-width: 80%;
 } 
 
 /* 聊天容器样式 */
 .chat-container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* 气泡靠左排列 */
-  padding: 10px 0; /* 只有上下边距 */
-  width: 100%; /* 容器宽度调整 */
+  align-items: flex-start;
+  padding: 10px 0;
+  width: 100%;
 }
 
 /* 气泡内容，包括文本 */
 .chat-content {
   display: flex;
-  align-items: center; /* 确保文本垂直居中 */
+  align-items: center;
 }
 
 .avatar {
@@ -199,19 +199,16 @@ a {
   height: 40px;
   border-radius: 50%;
   position: absolute;
-  left: -48px; /* 头像放在气泡外部 */
-  top: 0px; /* 底部对齐调整 */
+  left: -48px;
+  top: 0px; /* 头像顶部对齐 */
 }
- 
-}
-
 
 .container {
-  font-family: 'Arial', sans-serif; /* 设置字体，模仿聊天应用常见的简洁字体 */
-  color: white; /* 字体颜色设置为白色 */
-  background-color: #333; /* 背景色设置为深色，以便白色字体清晰可见 */
-  padding: 10px; /* 增加内边距 */
-  border-radius: 5px; /* 聊天气泡样式 */
+  font-family: 'Arial', sans-serif;
+  color: white;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .first-line {
