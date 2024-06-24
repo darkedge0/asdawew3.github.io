@@ -4,7 +4,7 @@ document
     e.preventDefault(); // 阻止默认锚点跳转行为
     window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" }); // 滚动到页面底部
   });
- 
+
 let videoInitiated = false;
 
 function enableVideoAutoplay() {
@@ -87,7 +87,7 @@ document.addEventListener("click", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const quotes = ["1", "2", "3"]; // Example quote
+  const quotes = ["社会主义的区别只有分工..", "不要死在昨天..", "你只是历史的奴隶.."]; // Example quote
 
   function displayRandomQuote() {
     const randomIndex = Math.floor(Math.random() * quotes.length);

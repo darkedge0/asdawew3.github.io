@@ -130,7 +130,7 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) skewX(-10deg);
-  z-index: 2; /* Increase z-index to place it above other elements */
+  z-index: 1;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
   animation: fadeIn 2s; /* Ensure the animation uses the defined fadeIn keyframes */
   width: 100%; /* Adjusted width */
@@ -153,11 +153,25 @@ a {
     }
 
 
+.time-stamp {
+  background: hsl(210, 10%, 30%, 0.65); /* 深蓝色背景 */
+  border: 1px solid hsl(210, 10%, 30%, 0.65); /* 使用稍微深一点的浅蓝色边框增强对比 */
+  border-radius: 20px; /* 圆角 */
+  margin: 10px auto; /* 上下外边距，水平居中 */
+  padding: 5px 10px; /* 内边距 */
+  font-size: 14px; /* 字体大小 */
+  color: white; /* 字体颜色为白色 */
+  text-align: center; /* 文本居中 */
+  width: 75px; /* 宽度 */
+  display: block; /* 块级显示 */
+  position: relative; /* 相对定位 */
+  transform: translate(-50px, 0px); /* X轴偏移20px, Y轴偏移10px */
+}
  
 /* 聊天气泡样式 */
 .chat-bubble {
-  background: hsl(210, 10%, 30%, 0.65); /* 深蓝色背景 */
-  border-radius: 30px; /* 圆角 */
+  background: linear-gradient(20deg, rgba(23, 33, 43, 0.65) 0, #17212B 100%);
+  border-radius: 30px 30px 30px 0px; /* 圆角 */
   margin: 10px 0; /* 上下外边距 */
   position: relative; /* 相对定位 */
   padding: 15px; /* 内边距 */
@@ -185,7 +199,7 @@ a {
   height: 40px;
   border-radius: 50%;
   position: absolute;
-  left: -50px; /* 头像放在气泡外部 */
+  left: -48px; /* 头像放在气泡外部 */
   bottom: 0px; /* 底部对齐调整 */
 }
  
@@ -214,8 +228,8 @@ a {
   display: block;
   max-width: 100%;
   height: auto;
-  margin: 0px 0 0px 0;  /* 增加图片的下边距 */
-  border-radius: 24px; /* 圆角 */
+  margin: 5px 0 0px 0;  /* 增加图片的下边距 */
+  border-radius: 15px; /* 圆角 */
 }
 
 
@@ -251,22 +265,75 @@ a {
 
 
 
+.side-image {
+  width: 100px; /* 图片宽度 */
+  height: 100px; /* 图片高度 */
+  background-size: cover;
+  display: none; /* 默认不显示 */
+  transition: opacity 2s; /* 渐变效果 */
+}
 
-@charset "UTF-8"; /*!
- * LiteWebChat_Frame 2.2.1 (https://lab.morfans.cn/LiteWebChat_Frame)
- * MorFans Lab(c) 2017-2023
- * Licensed under LGPL
- */ /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
-html {
-  line-height: 1.15;
-  -webkit-text-size-adjust: 100%;
+
+.card.navigation {
+  display: flex; /* 启用Flexbox */
+  align-items: center; /* 垂直居中 */
+  justify-content: space-around; /* 两端对齐，项目之间的间隔相等 */
 }
-body {
-  margin: 0;
+
+
+
+.image-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
 }
-main {
+
+.image-container img {
+  max-width: 100px; /* Adjust size as needed */
   display: block;
+  margin: 0 auto;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
@@ -281,9 +348,7 @@ pre {
   font-family: monospace, monospace;
   font-size: 1em;
 }
-a {
-  background-color: transparent;
-}
+
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
@@ -441,9 +506,7 @@ template {
   background-color: #1963bd !important;
   color: #f8f6f3 !important;
 }
-body {
-  font-family: Helvetica, "PingFang SC", "Microsoft YaHei", sans-serif;
-}
+
 .lite-chatbox {
   scroll-behavior: smooth;
   padding: 0;
@@ -574,7 +637,7 @@ body {
 
 .lite-chatbox .cleft .content {
   margin: 0 0 0 40px;
-  border-radius: 0 30px 30px 30px;
+  border-radius: 0 30px 30px 0px;
   background: linear-gradient(20deg, rgba(23, 33, 43, 0.45) 0, #17212B 100%);
   color: #fff; /* 文本颜色 */
   border: 1px solid rgba(0, 0, 0, 0.05);
